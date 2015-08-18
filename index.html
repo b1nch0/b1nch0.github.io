@@ -2,24 +2,18 @@
 <body>
  <div id="write"></div>
     <script>
-var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
+(function printMsg() {
+        var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
 var firstDate = new Date(1987,06,15);
 var secondDate = new Date();
 
 var diffDays = Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay));
 //console.log( 'Days since ' + diffDays );
-(function printMsg() {
+
         var node = document.getElementById("write");
         node.innerHTML = "<p>" + "Hello World! since " + diffDays + "Days</p>";
     })();
     </script>
-<p>
-Yo, lets get it on <br><img border="0" src="http://asset-6.soupcdn.com/asset/12840/3611_604a.gif" >
-
- <a href="https://wigle.net">
-<img border="0" src="https://wigle.net/bi/PoxCflmUUG9qdp33SlVURg.png">
-</a> 
-
 
 </p></body>
 </html>
